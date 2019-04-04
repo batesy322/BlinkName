@@ -1,0 +1,93 @@
+//Variables
+int led = D6; 
+
+void setup() 
+{
+    //Initiliase pin
+	  pinMode(led, OUTPUT);
+}
+
+void letterJ()
+{
+	  digitalWrite(led, HIGH);
+    delay(500);
+	  digitalWrite(led, LOW);
+    delay(500);
+    digitalWrite(led, HIGH);
+    delay(1500);
+    digitalWrite(led, LOW);
+    delay(500);
+    digitalWrite(led, HIGH);
+    delay(1500);
+    digitalWrite(led, LOW);
+    delay(500);
+    digitalWrite(led, HIGH);
+    delay(1500);
+    digitalWrite(led, LOW);
+    delay(1500);  
+}
+
+void letterO()
+{
+    digitalWrite(led, HIGH);
+    delay(1500);
+    digitalWrite(led, LOW);
+    delay(500);
+    digitalWrite(led, HIGH);
+    delay(1500);
+    digitalWrite(led, LOW);
+    delay(500);
+    digitalWrite(led, HIGH);
+    delay(1500);
+    digitalWrite(led, LOW);
+    delay(1500);
+}
+
+void letterH()
+{
+    digitalWrite(led, HIGH);
+    delay(500);
+    digitalWrite(led, LOW);
+    delay(500);
+    digitalWrite(led, HIGH);
+    delay(500);
+    digitalWrite(led, LOW);
+    delay(500);
+    digitalWrite(led, HIGH);
+    delay(500);
+    digitalWrite(led, LOW);
+    delay(500);
+    digitalWrite(led, HIGH);
+    delay(500);
+    digitalWrite(led, LOW);
+    delay(1500);
+}
+
+void letterN()
+{
+    digitalWrite(led, HIGH);
+    delay(1500);
+    digitalWrite(led, LOW);
+    delay(500);
+    digitalWrite(led, HIGH);
+    delay(500); 
+}
+
+void loop() 
+{
+    //Letter J
+	  letterJ();
+    
+    //Letter O
+    letterO();
+    
+    //Letter H
+    letterH();
+    
+    //Letter N
+    letterN();
+    
+    //finished word
+    digitalWrite(led, LOW);
+    delay(3500);
+}
